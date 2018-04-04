@@ -1,0 +1,212 @@
+h1
+{
+    animation: PhaseIn 1s;
+}
+
+.SecoesCurriculoInicio
+{
+    animation: PhaseIn 3s;
+}
+
+.SecoesCurriculo
+{
+    animation: PhaseIn 5s;
+}
+
+.ObjetivosPessoais
+{
+    animation: PhaseIn 3s;
+    animation-timing-function: ease-in;
+    animation-delay: 0s, 2s;
+}
+
+.BarraLateral
+{
+   animation: PhaseIn 3s; 
+}
+
+@keyframes Movimento
+{
+    from 
+    {
+        top: 0;
+    }
+    to 
+    {
+        top: 0.6rem;
+    }
+}
+
+@keyframes PhaseIn {    
+    0% 
+    {
+        opacity: 0;
+    }
+    100% 
+    {
+        opacity: 1;
+    }
+}
+
+.ObjetivosPessoais
+{
+    position: relative;
+    font-family: 'Arvo', "times new roman", serif;
+    font-size: 16.5px;
+    width: 40%;
+    background-color: lightgrey;
+    border: solid .125rem grey;
+    padding: 0.9375rem;
+    line-height: 1.7;
+    margin: 1.25rem;
+    float: right;
+    border-bottom-right-radius: 30px;
+    border-top-left-radius: 30px;
+    box-shadow: 10px 10px 20px darkgrey;
+    transition: transform 1s ease-in-out/*box-shadow 2s*/;
+    
+    /*box-shadow: 10px 10px 20px darkgrey, -10px -10px 20px darkgrey;*/
+    
+    /* transform: translate(-20%, 100%) rotate(-5deg) translateZ(1px); */
+}
+
+.ObjetivosPessoais:hover, .ObjetivosPessoais:focus
+{
+    font-family: 'Arvo', "times new roman", serif;
+    font-size: 16.5px;
+    width: 40%;
+    background-color: lightgrey;
+    border: solid .125rem grey;
+    padding: 0.9375rem;
+    line-height: 1.7;
+    margin: 1.25rem;
+    float: right;
+    border-bottom-right-radius: 30px;
+    border-top-left-radius: 30px;
+    box-shadow: 0 0 0 99999px rgba(0,0,0,.8);
+    transform: translate(-20%, 0) scale(1.5);
+    animation-play-state: paused;
+    
+    /*box-shadow: 10px 10px 20px darkgrey, -10px -10px 20px darkgrey;*/
+    
+    /* transform: translate(-20%, 100%) rotate(-5deg) translateZ(1px); */
+}
+
+.ObjetivosPessoais p
+{
+    position: relative;
+}
+
+.ObjetivosPessoais::before
+{
+    content: '"';
+    font-size: 10rem;
+    position: absolute;
+    top: -15%;
+    color: #bbb;
+    
+}
+
+.LinksMaterias
+{
+    font-style: italic;
+    font-size: 89.25%;
+    margin: 1.25rem;
+    line-height: 2;
+    text-decoration: none;
+}
+
+.LinksMaterias a
+{
+    color: dodgerblue;
+    text-decoration: none;
+}
+
+.LinksMaterias a:hover
+{
+    color: red;
+    text-decoration: none;
+}
+
+.SecoesCurriculoInicio
+{
+    padding-bottom: 1.25rem;
+    /*border-bottom: solid grey 0.06rem;*/
+    width: 30%;
+    background-image: linear-gradient(to right, transparent,grey,black,grey,grey, darkgrey, transparent);
+    background-size: 100% 1px;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+}
+
+.SecoesCurriculoInicio p
+{
+    text-align: left;
+}
+
+/*.SecoesCurriculoInicio div>p Testa a função filhos diretos do pai
+{
+    text-align:center;
+}
+*/
+
+.SecoesCurriculo
+{
+    padding-bottom: 1.25rem;
+    /*border-bottom: solid grey 0.06rem;*/
+    background-image: linear-gradient(to right, transparent,grey,black,grey,grey, darkgrey, transparent);
+    background-size: 100% 1px;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+}
+
+.NomeCurriculo
+{
+    width: 11.5625rem;
+    box-sizing: border-box;
+}
+
+.Habilidades
+{
+    border-collapse: separate;
+    border-spacing: 0.5rem;
+    width: 30rem;
+    border: grey 0.1rem solid;
+    margin-left: 1.25rem;
+}
+
+.Habilidades th
+{
+    font-family: "Julius Sans One", "arial", sans-serif;
+    font-weight: bolder;
+    background-color: cornflowerblue;
+    color: white;
+    padding: 0.3rem;
+    vertical-align: middle;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
+}
+
+.Habilidades thead th 
+{
+    background-color: dodgerblue;
+}
+
+.Habilidades td
+{
+    font-family: "Julius Sans One", "arial", sans-serif;
+    font-weight: bolder;
+    background-color: darkgray;
+    color: white;
+    text-align: center;
+    padding: 0.3rem;
+}
+
+.Habilidades [rowspan] 
+{
+    vertical-align: middle;
+    text-align: center;
+}
+
+.Habilidades [colspan] 
+{
+   text-align: center;
+}

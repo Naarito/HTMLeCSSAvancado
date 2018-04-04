@@ -1,0 +1,76 @@
+.TituloDePagina
+{
+    background-color: white;
+}
+
+.BarraLateral
+{
+    box-shadow: 10px 10px 10px black;
+}
+
+
+body
+{
+    background-image: url(../img/BackgroundArtigos4.jpg);
+    background-attachment: fixed;
+    background-size: contain;
+}
+
+.TituloArtigos
+{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+}
+
+.GradeArtigos
+{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    flex: 1;
+}
+
+.GradeArtigos li
+{
+
+    border: 1px grey solid;
+    padding: 0.5rem;
+    text-align: center;
+    box-sizing: border-box;
+    margin: 0.5%;
+    font-family: "Julius Sans One", "arial", sans-serif;
+    font-size: 1rem;
+    background-color: white;
+}
+
+.GradeArtigos li:first-child
+{
+ flex:1;
+}
+
+.GradeArtigos li~li
+{
+ flex:1;
+}
+
+.GradeArtigos a
+{
+    text-decoration: none;
+    color: dodgerblue;
+    font-size: 137.5%;
+}
+
+.GradeArtigos a:hover
+{
+    text-decoration: none;
+    color:red;
+    font-size: 137.5%;
+}
+
+.GradeArtigos img
+{
+    width: 80%;
+    padding: 10px;
+}

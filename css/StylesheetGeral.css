@@ -1,0 +1,296 @@
+body
+{
+    min-width: 930px;
+}
+
+/*.ContainerPrincipal
+{
+    position: absolute;
+    width: 78%;
+    perspective: 6px;
+}*/
+
+h1.TituloDePagina
+{
+    font-family: "Julius Sans One", "arial", sans-serif;
+    font-size: 250%;
+    padding: 1.9rem;
+    text-align: center;
+    border: solid grey .06rem;
+}
+
+h2
+{
+    font-family: "Julius Sans One", "arial", sans-serif;
+    font-size: 187.5%;
+    margin-left: 1.25rem;
+    margin-bottom: 2.5rem;
+    margin-top: 2.5rem;
+    text-align: left;
+    padding: 1.25rem;
+    border: solid .06rem grey;
+    width: 19.6rem;
+    box-sizing: border-box;
+}
+
+h3
+{
+    font-family: "Julius Sans One", "arial", sans-serif;
+    font-size: 143.75%;
+    margin-top: 1.25rem;
+    margin-left: 1.25rem;
+    margin-bottom: 0.625rem;
+    text-align: left;
+}
+
+h4
+{
+    font-family: "Julius Sans One", "arial", sans-serif;
+    font-size: 125%;
+    margin-top: 1.25em;
+    margin-left: 1.25rem;
+    margin-bottom: 0.125rem;
+    text-align: left;
+}
+
+h5
+{
+    font-family: "Julius Sans One", "arial", sans-serif;
+    font-size: 1.2rem;
+    margin-top: 2.5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    font-weight: bolder;
+}
+
+p
+{
+    font-family: 'Hind',"Times New Roman", sans-serif;
+    font-size: 100%
+    text-align: justify;
+    margin-left: 1.25rem;
+}
+
+p::first-letter
+{
+    font-size: 1.1em;
+}
+
+main
+{
+    width: 78%;
+    box-sizing: border-box;
+    margin-left: 0.9rem;
+    margin-right: 0.9rem;
+    margin-top: 0.625rem;
+    margin-bottom: 2.5rem;
+}
+
+.FotoDeMatheusNaritoYoneoka
+{
+    width: 95%;
+    box-sizing: border-box;
+    border: 0.1875rem grey solid;
+    margin-top: 0.3125rem;
+    border-radius: 10px
+}
+
+/*.BotoesNavegacao h5+li Testa a modificação do li logo após o h5
+{
+    
+}*/
+
+.BotoesNavegacao a
+{
+    font-family: "Julius Sans One", "arial", sans-serif;
+    font-size: 106%;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    line-height: 1.6rem;
+    font-weight: bold;
+}
+
+.BotoesNavegacao a:hover
+{
+    font-family: "Julius Sans One", "arial", sans-serif;
+    font-size: 106%;
+    text-align: center;
+    text-decoration: none;
+    color: deepskyblue;
+    line-height: 1.6rem;
+    animation: Selecao 0.5s;    
+}
+
+@keyframes Selecao
+{
+    from 
+    {
+        color: black;
+    }
+    to 
+    {
+        color: deepskyblue;
+    }
+}
+
+.BotoesSociais li
+{
+    display: inline-block;
+    margin-top: 0.3125rem;
+    margin-bottom: 0.625rem;
+}
+
+/*.BotoesSociais li~li /* Modifica os li's a partir do segundo li
+{
+    margin-left: 0.3rem;
+}*/
+
+/* .BotoesSociais li:nth-child(odd) /* Modifica os li's IMPARES 
+{
+    background-color: red;
+}*/
+
+/*.BotoesSociais li:nth-of-type(n+2) /* Outro jeito de modificar os li's usando funções
+{
+    background-color: red;
+}*/
+
+/*.BotoesSociais li:nth-last-child(even) /* Outro jeito de modificar os li's usando funções
+{
+    background-color: red;
+}*/
+
+
+.BotoesSociais a
+{
+    margin-top: 0.3125rem;
+    margin-bottom: 0.3125rem;
+    display:block;
+    width: 2.5rem;
+    height: 2.5rem;
+    text-indent: -9999px;
+    
+}
+
+.BotoesSociais a 
+{
+    position: relative;
+}
+
+.BotoesSociais a:hover::before,
+.BotoesSociais a:focus::before 
+{
+    content: '';
+    width: 1em;
+    height: 1em;
+    background-color: black;
+    position: absolute;
+    bottom: -13px;
+    left: 12px;
+    transform: translateY(.5em) rotate(45deg);
+}
+
+.BotoesSociais a:hover::after,
+.BotoesSociais a:focus::after
+{
+    content: attr(data-tooltip);
+    content: attr(data-tooltip);
+    font-family: "Julius Sans One", "arial", sans-serif;
+    position: absolute;
+    color: white;
+    padding: 0.5rem;
+    border-radius: 10%;
+    top: 120%;
+    right: 0;
+    text-indent: 0;
+    background-color: black;
+}
+
+.BarraLateral
+{
+    border: solid 0.1875rem grey;
+    width: 16%;
+    min-width: 6.375rem;
+    box-sizing: border-box;
+    text-align: center;
+    position: fixed;
+    margin-right: 0.9rem;
+    right: 0;
+    top: 0.625rem;
+    background-color: lightgrey;
+    border-bottom-left-radius: 75px;
+    box-shadow: 10px 10px 10px darkgrey;
+}
+
+.Facebook
+{
+    background-image: url(../img/facebook.png);
+    background-size: 2.5rem;
+}
+
+.Linkedin
+{
+    background-image: url(../img/linkedin.png);
+    background-size: 2.5rem;
+}
+
+footer
+{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-family: "Julius Sans One", "arial", sans-serif;
+    color: white;
+    background-color: rgba(0,0,0,.74);
+    /*opacity: .73;*/
+}
+
+.Copyright
+{
+    float: right;
+    margin-right: 0.6rem;
+}
+
+.QuerEntrarEmContato
+{
+    padding: 0rem;
+    margin-top: 0rem;
+    margin-left: 0.6rem;
+    margin-bottom: 0rem;
+    float: left;
+    clear: left;
+}
+.QuerEntrarEmContatoCima
+{
+    padding: 0rem;
+    margin-top: 0.3rem;
+    margin-left: 0.6rem;
+    margin-bottom: 0rem;
+    float: left;
+    clear: left;
+}
+
+.LinkTexto
+{
+    font-style: italic;
+    color: dodgerblue;
+    text-decoration: none;
+}
+
+.LinkTexto:hover
+{
+    font-style: italic;
+    color: red;
+    text-decoration: none;
+}
+
+em
+{
+    font-style: italic;
+}
+
+strong
+{
+    font-weight: bold;
+}

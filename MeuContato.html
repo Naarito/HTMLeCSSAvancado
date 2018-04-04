@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="utf-8"> <!-- Define codificação da página -->
+        <title>Contato - Yoneoka</title> <!-- Define título da aba -->
+        <link rel="icon" href="img/Space-Invaders-240x200.png"> <!-- Define imagem da aba -->
+        <link rel="stylesheet" href="css/reset.css"> <!-- Apaga padrões de formatação do navegador -->
+        <link rel="stylesheet" href="css/StylesheetGeral.css">
+        <link rel="stylesheet" href="css/StylesheetContato.css">
+        <link href="https://fonts.googleapis.com/css?family=Arvo|Hind|Julius+Sans+One" rel="stylesheet">
+    </head>
+    
+    <body>
+        <main>
+            <h1 class="TituloDePagina">Contato</h1>
+            <div class="ContainerPrincipal">
+                <form>
+                    <fieldset>
+                        <legend><strong>Dados Pessoais:</strong></legend>
+                        
+                        <label for="Nome" class="Icones">Nome:</label>
+                        <input id="Nome" name="nome" placeholder="Seu nome completo aqui" type="text" required autofocus pattern="[A-Za-z ']{4,}">
+                        <label for="Email" class="Icones">E-mail:</label>
+                        <input id="Email" name="email" placeholder="exemplo@provedor.com" type="email" required>
+                       <!--<label for="Numero">Número:</label>
+                        <input id="Numero" name="numero" placeholder="(XX)XXXXXXXXX" pattern="[0-9 ()]{4,}">-->
+                    </fieldset>
+                    
+                    <fieldset>
+                        <legend><strong>Assunto:</strong></legend>
+                        
+                        <!-- <select>
+                            <option value="SubjJob">
+                                Jobs
+                            </option>
+                            
+                            <option value="SubjConsult">
+                                Consultoria
+                            </option>
+                            
+                            <option value="SubjBlog">
+                                Blog
+                            </option>
+                            
+                            <option value="SubjError">
+                                Reportar um erro
+                            </option>
+                            
+                            <option value="SubjOther">
+                                Outros
+                            </option>
+                        </select>-->
+                        
+                        <!--MENU RADIAL-->
+                        
+                        <label>
+                            <input type="radio" name="assunto" value="SubjConsult">
+                            Consultoria
+                        </label>
+
+                        <label>
+                            <input type="radio" name="assunto" value="SubjJob">
+                            Jobs
+                        </label>
+
+                        <label>
+                            <input type="radio" name="assunto" value="SubjBlog">
+                            Blog
+                        </label>
+
+                        <label>
+                            <input type="radio" name="assunto" value="SubjError">
+                            Reportar um erro
+                        </label>
+
+                        <label>
+                            <input id="Outro" type="radio" name="assunto" value="SubjOther">
+                            <label for="Outro">Outro</label>
+                            <input type="text" name="OutroAssunto">
+                        </label>
+                        
+                    </fieldset>
+                    
+                    <fieldset>
+                    <legend><strong>Mensagem:</strong></legend>
+                    <!--<label for="Mensagem">Mensagem:</label>-->
+                    <textarea id="Mensagem" name="mensagem" cols="30" rows="6" required placeholder="Digite aqui sua mensagem" required></textarea>
+                    <button type="submit"> <strong>Enviar</strong></button>
+                    </fieldset>
+                </form>
+            </div>
+        </main>
+        
+        <aside class="BarraLateral">
+            <img class="FotoDeMatheusNaritoYoneoka" alt="Foto de Matheus Narito Yoneoka" src="img/minhafoto.jpeg">
+            <nav class="Navegador">
+                <h5>Matheus Narito Yoneoka</h5>
+                <ul class="BotoesNavegacao">
+                    <!--<h5>Matheus Narito Yoneoka</h5> Utilizado para testar a função + -->
+                    <li><a href="MeuIndex.html">Home</a> </li>
+                    <li><a href="MeusArtigos.html">Artigos</a> </li>
+                    <li><a href="MeuCurriculo.html">Currículo</a> </li>
+                    <li><a href="MeuBlog.html">Blog</a> </li>
+                    <li><a href="MeuContato.html">Contato</a> </li>
+                </ul>
+            </nav>
+            <ul class="BotoesSociais">
+                <li><a class="Linkedin" href="https://www.linkedin.com/in/matheus-narito-yoneoka-b522124a/" data-tooltip="Me adicione no LinkedIn!"> Linkedin </a></li>
+                <li><a class="Facebook" href="https://www.facebook.com/matheus.narito?ref=bookmarks" data-tooltip="Me adicione no Facebook!"> Facebook </a></li>
+            </ul>
+        </aside>
+        
+        <footer>
+            <h4 class="QuerEntrarEmContatoCima">Dúvidas?</h4>
+            <p class="QuerEntrarEmContato">Entre em contato <a class="LinkTexto" href="MeuContato.html">via e-mail</a> ou pelo telefone <a class="LinkTexto" href="tel:+55(41)98494-6626">(41) 98494-6626</a></p>
+            <p class="Copyright">&copy; Matheus Narito Yoneoka 2017</p>
+        </footer>
+        
+    </body>
+</html>

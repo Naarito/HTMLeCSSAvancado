@@ -1,0 +1,170 @@
+.TituloDePagina
+{
+    background-color: white;
+}
+
+.ContainerPrincipal
+{
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+    padding: 2rem;
+}
+
+body
+{
+    background-image: url(../img/BackgroundArtigos5.jpg);
+    background-attachment: fixed;
+}
+
+.BarraLateral
+{
+    box-shadow: 10px 10px 10px black;
+}
+
+.Icones::after
+{
+    content: '';
+    width: 2.2rem;
+    height: 2.2rem;
+    background-color: dodgerblue;
+    background-size: 50% 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.Icones 
+{
+    position: relative;
+}
+
+.Icones::after 
+{
+    position: absolute;
+    top: 115.5%;
+    right: 95.4%;
+}
+
+.Icones + input 
+{
+    position: relative;
+    left: 2em;
+}
+
+.Icones + input 
+{
+    width:100%;
+}
+
+.Icones[for="Nome"]::after 
+{
+    background-image: url(../img/usuario.png);
+}
+
+.Icones[for="Email"]::after 
+{
+    background-image: url(../img/email.png);
+}
+
+legend 
+{
+    font-family: "Julius Sans One", "arial", sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding-top: 1rem;
+    padding-bottom: 0.6rem;
+    background-color: white;
+}
+
+label
+{
+    font-family: 'Hind',"Times New Roman", sans-serif;
+    font-size: 100%
+    background-color: white;
+    width: 50%;
+    padding-top: 1rem;
+}
+
+input
+{
+    margin-top: 0.3rem;
+}
+
+label[for] 
+{
+    display: block;
+    
+}
+
+input[type="text"],input[type="email"],
+textarea 
+{
+    font-family: 'Hind',"Times New Roman", sans-serif;
+    font-size: 100%;
+    padding: .25em .5em;
+    width: 50%;
+    box-sizing: border-box;
+    border: 1px solid darkgrey;
+}
+
+
+fieldset > fieldset
+{
+    display: inline;
+}
+
+label[for="Outro"]
+{
+    display: inline;
+    font-family: 'Hind',"Times New Roman", sans-serif;
+    font-size: 100%
+}
+
+input[name="OutroAssunto"]
+{
+    width: auto;
+}
+
+input[value="SubjOther"] ~ input 
+{
+    display: none;
+}
+
+input[value="SubjOther"]:checked ~ input {
+    display: inline;
+}
+
+input:focus,
+textarea:focus 
+{
+    background-color: rgba(60,100,255,0.2);
+}
+
+input:invalid {
+    box-shadow: 0 0 3px red;
+}
+
+button 
+{
+    border: 0;
+    padding: .5em 1em;
+    font-family: "Julius Sans One", "arial", sans-serif;
+    background-color: black;
+    color: white;
+    font-size: 1.2em;
+    display: block;
+    margin-top: 1em;
+}
+
+button:hover, button:focus
+{
+    border: 0;
+    padding: .5em 1em;
+    font-family: "Julius Sans One", "arial", sans-serif;
+    background-color: dodgerblue;
+    color: white;
+    font-size: 1.2em;
+    display: block;
+    margin-top: 1em;
+}

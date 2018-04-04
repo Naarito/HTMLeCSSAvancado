@@ -1,0 +1,341 @@
+/*html
+{
+    overflow: hidden;
+}*/
+
+main 
+{
+    margin: 0;
+    margin-bottom: 2rem;
+    width: 100%;
+    padding-bottom: 0;
+}
+
+/*.BannerBeta
+{
+    font-family: 'Hind',"Times New Roman", sans-serif;
+    background-color: white;
+    width: 20rem;
+    font-size: 3rem;
+    border: solid darkgrey 0.3rem;
+    padding: 0.6rem;
+    position:absolute;
+    top: 0;
+    right: 0;
+    transform-origin: 0 0;
+    transform-origin: 0 0;
+    transform: translate(4.2754em, -2.1749em) rotate(45deg);
+}*/
+
+.TituloPrincipal
+{
+    text-align: center;
+}
+
+.FotoIndex 
+{
+    height: 226px;
+    border: solid black 0.1875rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px darkgrey;
+}
+
+.SubtituloIndex
+{
+    text-align: center;
+}
+
+.SecaoValores
+{
+    text-align: center;
+}
+
+.Saudacao 
+{
+    font-family: "Julius Sans One", "arial", sans-serif;
+    font-size: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    text-align: center;
+}
+
+.ListaSaudacao li
+{
+    display: inline-block;
+}
+
+.ListaSaudacao h2
+{
+    width: 34.375rem;
+    text-align: center;
+}
+
+.Valores
+{
+    margin-bottom: 0.625rem;
+    margin-top: 0.625rem;
+    color: dodgerblue;
+    border-color: dodgerblue;
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px darkgrey;
+}
+
+.BotaoIndex 
+{
+    font-family: "Julius Sans One", "arial", sans-serif;
+    font-size: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    background-color: white;
+    color: grey;
+    border: .06rem solid grey;
+    text-decoration: none;
+    width: 25rem;
+    display: block;
+    text-align: center;
+    box-shadow: 2px 2px grey;
+    position: relative;
+    animation: Movimento 1s infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in;
+}
+
+.BotaoIndex:hover
+{
+    font-family: "Julius Sans One", "arial", sans-serif;
+    font-size: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    background-color:white;
+    color: black;
+    border: .06rem solid black;
+    text-decoration: none;
+    width: 25rem;
+    display: block;
+    text-align: center;
+    box-shadow:  2px 2px grey;
+    animation-play-state: paused;
+}
+
+.BotaoIndexMeio 
+{
+    font-family: "Julius Sans One", "arial", sans-serif;
+    font-size: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    background-color: transparent;
+    color: white;
+    border: .06rem solid white;
+    text-decoration: none;
+    width: 25rem;
+    display: block;
+    text-align: center;
+    box-shadow:  2px 2px black;
+    position: relative;
+    animation: Movimento 1s infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in;
+}
+
+.BotaoIndexMeio:hover
+{
+    font-family: "Julius Sans One", "arial", sans-serif;
+    font-size: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    background-color:white;
+    color: black;
+    border: .06rem solid black;
+    text-decoration: none;
+    width: 25rem;
+    display: block;
+    text-align: center;
+    box-shadow:  2px 2px black;
+    animation-play-state: paused;
+}
+
+@keyframes Movimento
+{
+    from 
+    {
+        top: 0;
+    }
+    to 
+    {
+        top: 0.5rem;
+    }
+}
+
+.Artigos 
+{
+    background-color: darkgrey;
+    border-top: 0.1rem solid black;
+    border-bottom: 0.1rem solid black;
+    /*background-image: linear-gradient(to bottom right, white, red, black);*/
+    
+    /*background estático*/
+    /*background-image: linear-gradient(45deg,
+                        transparent,
+                        transparent 14px,
+                        white 1px,
+                        white 1px,
+                        transparent 15px,
+                        transparent);*/
+    background-image: url(../img/BackgroundArtigos2.png);
+    background-size: 2000px 2000px;
+    background-attachment: fixed;
+    background-size: contain;
+    
+}
+
+.Artigos h2 
+{
+    color: white;
+    border-color: white;
+}
+
+.Artigos ul 
+{
+    display: flex;
+    align-content: space-between;
+    margin-bottom: 3rem;
+}
+
+.Artigos li 
+{
+    border: 0.3rem solid black;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    flex: 1;
+}
+
+.Artigos li:first-child
+{
+    order: 2;
+    transform: scale(1.1);
+}
+
+.Artigos li:nth-child(2)
+{
+    order: 1;
+}
+
+.Artigos li:last-child
+{
+    order: 3;
+}
+
+.Artigos img {
+    width: 100%;
+    display: block;
+}
+.Blog 
+{
+    background-color: white;
+    color: black;
+    margin-bottom: 5rem;
+    text-align: center;
+}
+
+.Blog li
+{
+    display: inline-flex;
+    position: relative;
+}
+
+.Blog li h2
+{
+    width: 34.375rem;
+}
+
+.Postagens
+{
+    margin-bottom: 0.625rem;
+    margin-top: 0.625rem;
+    color: dodgerblue;
+    border-color: dodgerblue;
+    border-bottom-right-radius: 30px;
+    border-top-left-radius: 30px;
+    box-shadow: 5px 5px 10px darkgrey;
+    transition: 0.05s ease-in;
+}
+
+.Postagens:hover + .InicioPostagem1 , .Postagens:focus + .InicioPostagem1
+{
+    display: block;
+}
+
+.Postagens:hover + .InicioPostagem2 , .Postagens:focus + .InicioPostagem2
+{
+    display: block;
+}
+
+.Postagens:hover
+{
+    display: block;
+    margin-bottom: 0.625rem;
+    margin-top: 0.625rem;
+    padding-bottom: 10rem;
+    color: dodgerblue;
+    border-color: dodgerblue;
+    border-bottom-right-radius: 30px;
+    border-top-left-radius: 30px;
+    box-shadow: 5px 5px 10px darkgrey;
+}
+
+.InicioPostagem1
+{
+    display: none;
+    background-color: white;
+    position: absolute;
+    top: 10rem;
+    right: 6rem;
+    padding: 1rem;
+    width: 20rem;
+    border: solid black 0.1rem;
+    box-shadow:  3px 3px grey;
+}
+
+.InicioPostagem2
+{
+    display: none;
+    background-color: white;
+    position: absolute;
+    top: 6rem;
+    right: 6rem;
+    padding: 1rem;
+    width: 20rem;
+    border: solid black 0.1rem;
+    box-shadow:  3px 3px grey;
+}
+
+.LinkTexto
+{
+    color: dodgerblue;
+    text-decoration: none;
+}
+
+.LinkTexto:hover
+{
+    color: red;
+    text-decoration: none;
+    
+}

@@ -1,0 +1,41 @@
+time
+{
+    font: "Times New Roman", Serif;
+    font-style: italic;
+    margin-left: 1.25rem;
+    line-height: 3;
+}
+
+.DiferentesArtigos
+{
+    border-bottom: dotted grey 0.125rem;
+    padding-bottom: 2.5rem;
+}
+
+.DiferentesArtigos h2
+{
+    margin-left: 1.25rem;
+    margin-bottom: .625rem;
+    margin-top: 3.125rem;
+}
+
+.DiferentesArtigos p
+{
+    font-size: 125%;
+}
+
+.LeiaMais
+{
+    font-family: "Julius Sans One", "arial", sans-serif;
+    font-size: 125%;
+    text-align: center;
+    text-decoration: none;
+    color: dodgerblue;
+    line-height: 1.5;
+    margin-left: 1.25rem;
+}
+
+.LeiaMais:hover
+{
+    color: red;
+}
